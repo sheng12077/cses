@@ -3,7 +3,7 @@ using namespace std;
 #define int long long
 #define endl '\n'
 #define inf 2e18
-#define maxn 100005
+#define maxn 1000005
 #define mod 1000000007
 
 signed main(){
@@ -13,7 +13,7 @@ signed main(){
 
     int n;
     cin>>n;
-    int dp[100005]={0};
+    int dp[maxn]={0};
     dp[0]=1,dp[1]=1,dp[2]=2,dp[3]=4,dp[4]=8,dp[5]=16,dp[6]=32;
     if(n>6){
         for(int i=7;i<=n;i++){
